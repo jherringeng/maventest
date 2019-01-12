@@ -10,7 +10,7 @@
   <groupId>com.itemis.jenkins.plugins</groupId>
   <artifactId>unleash</artifactId>
   <version>2.3.1-SNAPSHOT</version>
-  <packaging>hpi</packaging>
+  <packaging>war</packaging>
 
   <name>Unleash Maven Plugin</name>
   <description>Provides Maven release functionality using the Unleash Maven Plugin.</description>
@@ -105,6 +105,8 @@
   </dependencies>
   
   <build>
+    <directory>${project.basedir}/target</directory>
+    <outputDirectory>${project.build.directory}/classes</outputDirectory>
     <pluginManagement>
       <plugins>
         <plugin>
